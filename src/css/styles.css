@@ -1,0 +1,452 @@
+body {
+   
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://previews.123rf.com/images/peiling/peiling0702/peiling070200028/764894-simple-design-against-white-background-good-for-designers-and-as-powerpoint-presentation.jpg?fj=1");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment:fixed;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+.introduction{
+    color:rgb(24, 67, 90);
+    font-size:300%;
+}
+main{
+    margin-top:auto;
+}
+header{
+    font-family: 'Aleo', serif;
+    
+    color:blue;
+}
+header h1{
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-size: 1.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(6, 6, 6);
+        
+
+  }
+  
+  .head-nav{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  .nav-link{
+    border-style:solid;
+    display:none;
+    padding: 0.5em;
+    text-decoration: none;
+    color:rgb(108, 112, 112);
+    font-size:1em;
+    border-radius:2px;
+    width:fit-content;
+  } 
+  
+  .nav-link:hover{
+    background-color:rgb(226, 45, 45); 
+  }
+   
+  /* menu styles */
+  
+  .hamburger-menu{
+    display: grid;
+    gap:5px;
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  /*color of the menu bar */
+  .hamburger-menu::before,
+  .hamburger-menu::after,
+  .hamburger-menu input {
+    content: "";
+    width: 50px;
+    height: 7px;
+    background-color: #000000;
+    border-radius: 9999px;
+    transform-origin: left center;
+  }
+   /*color of the menu bar */
+   
+  .hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+  
+  .sidebar nav ul{
+    display: none;
+    text-decoration: none;
+  }
+  
+  .hamburger-menu:has(input:checked) + .sidebar nav ul{
+    display:block;
+    padding:0.5em;
+    text-decoration:none;
+    width:fit-content;
+    border-radius:2px;
+    color:white;
+    font-size:1em;
+  }
+  /* Background of the menu's when hover*/
+  .hamburger-menu:has(input:checked) + .sidebar nav a:hover{
+    display:block;
+    padding:0.5em;
+    text-decoration:none;
+    background-color:rgb(232, 233, 208);
+    font-size:1em;
+  }
+  /* Background of the menu's when hover*/
+  
+
+@media screen and (max-width: 500px){
+    #desk{ content-visibility: hidden;}   
+}
+.sidebar nav ul li{
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.sidebar nav ul li a{
+    margin-bottom: 20px;
+    font-size: large;
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+.sidebar nav ul li{
+    list-style-type: disc;
+    list-style-type: none;
+    
+}
+
+.introduction{
+    color:rgb(0, 119, 255);
+    font-size:300%;
+    width:100vw;
+    height:60vh;
+    font-family: 'Playfair Display', serif;
+    transition: transform 0.3s ease-in;
+    
+}
+header{
+    color:rgb(255, 255, 255);
+    background-color:rgb(115, 75, 94) ;
+}
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100%{
+        transform:translateY(0)
+    }
+    40%{
+        transform:translateY(-35px)
+        }
+    }
+    @keyframes pop{
+        from{
+            transform:scale(0)
+        }
+        to{
+            transform:scale(2);
+            
+
+        }
+    }
+    @keyframes rotation{
+        from{
+            transform:rotate(0deg)
+        }
+        to{
+            transform:rotate(180deg);
+            
+
+        }
+    }
+ footer{
+    
+    color:white;
+    background-color: rgb(115, 75, 94) ;
+    position:relative;
+    padding:5px;
+    margin:12px 0 0 0 ;
+ }
+ footer i{
+    
+    color:white;
+    margin-right:7vw;
+    font-size: 3em;
+    transition: transform 0.3s ease-in;
+    padding:2px;
+    margin-left:9vw;
+   
+ }
+ footer i:hover ,footer i:focus footer:active{
+    animation:pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1 normal;
+ }
+ footer p{
+    color:white;
+    text-align: center;
+    
+ 
+}
+
+.introduction:hover{
+    animation-name: bounce;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    animation-iteration-count: 1;
+   animation-direction: normal;
+}
+#firststate{
+    display:flex;
+    flex-direction: column;
+    border-radius:30px;
+    padding:12px 15px 0 5px;
+    height:50vh;
+    margin-top:30px;
+    border:0.1em solid black ;
+    box-shadow: 5px 3px grey;
+}
+#firststate img{
+    width:45vw;
+    border: 0.1em solid black;
+    border-radius: 50%; 
+    align-self: center;
+}
+.footerwith{
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*About me Style */ 
+
+main h1{
+    color:rgb(24, 67, 90);
+    font-size:150%;
+    text-align: center;
+   
+}
+h2{
+    text-align: center;
+    font-family: 'Smooch', cursive;
+    font-size:350%;
+    color:rgb(24, 67, 90);
+
+}
+section{
+    display:flex;
+    flex-direction:column;
+    gap:2em;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-wrap: wrap;
+   
+
+}
+video{
+        width:95.2vw;
+}  
+
+h3, div h4{
+    text-align:center;
+    margin-top:4px;
+    font-size:23px;
+    
+}
+.shorts{
+    width:95.4vw;
+    height:40vh;
+    margin-bottom:0;
+    
+}
+
+#img1,#img2, #img3, #img4, #img5, #img6, #img7,.shorts img{
+    width:60%;
+    height:90%;
+    float:right;
+    margin-top:2px ;
+    
+    
+}
+#img8{
+    float:left;
+}
+.top p{
+    margin-top:0;
+    padding:1em;   
+}
+h3, div h4{
+    text-align:center;
+    margin-top:0px;
+    font-size:25px;
+    color:rgb(24, 67, 90);
+}
+.top{
+    border:1px inset black;
+    border-radius:5px;
+    box-shadow: 6px 5px grey;
+
+
+}
+/*  Education style*/
+
+
+
+  
+  tbody tr:nth-child(even) {
+    background-color:rgb(191, 156, 172) ;
+  }
+  table {
+    border-collapse: collapse;
+    border: 2px inset black;
+    margin-right:auto;
+    box-shadow:-6px -5px grey;
+  }
+  #bookimg{
+    display:none;
+  }
+  th, td {
+    padding-left: 8px;
+  }
+.imagespull{
+    display:flex;
+    gap:0.3em;
+    flex-wrap: wrap;
+    border:1px outset black;
+
+}
+.gridapp{
+    background-color:rgb(224, 214, 224)
+}
+td img{
+    width:70%
+}
+#image2, #image3, #image4, #image5{
+    width:45vw;
+    height:27vh;
+}
+#image1{
+    margin-left:10px;
+    width:90vw;
+    height:30vh;
+
+}
+/*ffff*/
+h1{
+    font-size: 2em;
+}
+
+#image7{
+    
+    width:30vw;
+    height:20vh
+}
+#image6{
+    height:20vh;
+}
+#educationbg{
+    background-image: url("https://t3.ftcdn.net/jpg/05/00/34/58/360_F_500345899_4OqmtspFst6SRnNQvLj7h7TfKOrBwTer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment:fixed;
+}
+/*resume*/
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+#achievment, #skills , #volunteer{
+    width:100%;
+    height:50%;
+    margin: 20px auto;
+}
+.card{
+    border:2px inset  rgb(221, 213, 208);
+    margin-bottom:40px;
+    border-radius:5px;
+    box-shadow:-6px -5px grey;
+    background-color:rgb(224, 214, 224) ;
+    opacity:0.8;
+}
+#achievment:hover,#skills:hover, #volunteer:hover{
+    animation:rotation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1 normal;
+
+}
+.achlist li{
+    list-style:square;
+   background-size: 6px;
+    background-position: left center;
+    background-size: 4px;
+    background-repeat: no-repeat;
+    padding:7px 20px;
+    font-size: 22px;
+}
+.card h4{
+    color: rgb(24, 67, 90);
+    font-size: 38px;
+    text-decoration-line: underline;
+
+}
+.card h4::first-letter, .achlist li::first-letter{
+    font-size:125%;
+}
+/*contact me Style*/
+.side{
+    display:flex;
+    flex-direction: column;
+}
+span .fa-phone::before {
+    font-size:10em;
+    border:2px solid black;
+    border-radius: 50%;
+    padding :0.07em;
+    background-color: white;
+    margin-bottom: 3px;
+    
+}
+
+#contactp +h1{
+    text-indent:30px
+    
+
+}
+.contacts i{
+    margin-right:5px;
+    align-self:center;
+}
+.info{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin-left:12px
+}
+#contactp{
+    margin-top:0;
+    font-size:30px;
+    font-weight: 900;
+    color:rgb(24, 67, 90)
+}
+span{
+    font-size:1em;
+}
+.footerwith{
+    margin-top:170px;
+}
+
