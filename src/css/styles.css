@@ -1,17 +1,15 @@
 body {
-   
-    display: flex;
-    flex-direction: column;
+    
     background-image: url("https://previews.123rf.com/images/peiling/peiling0702/peiling070200028/764894-simple-design-against-white-background-good-for-designers-and-as-powerpoint-presentation.jpg?fj=1");
     background-repeat: no-repeat;
     background-size: cover;  
-    background-attachment:fixed;
+    background-attachment:local;
   }
   
   footer {
     margin-top: auto;
   }
-.introduction{
+.firststate__introduction{
     color:rgb(24, 67, 90);
     font-size:300%;
 }
@@ -21,21 +19,23 @@ main{
 header{
     font-family: 'Aleo', serif;
     
-    color:blue;
 }
-header h1{
+header{
+    width:100%;
+    color:rgb(255, 255, 255);
+    background-color:rgb(115, 75, 94) ;
+}
+.header__h1{
     font-weight: bolder;
     font-size: 1.5em;
-    font-size: 1.5em;
+   
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(6, 6, 6);
-        
-
-  }
+}
   
-  .head-nav{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+.head-nav{
+    display:flex;
+    flex-direction: column;
   }
   
   .nav-link{
@@ -50,19 +50,21 @@ header h1{
   } 
   
   .nav-link:hover{
-    background-color:rgb(226, 45, 45); 
+    background-color:rgb( 247, 231, 206);; 
   }
    
   /* menu styles */
   
   .hamburger-menu{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap:5px;
     width: fit-content;
     position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
+    margin-top:10px
   }
   /*color of the menu bar */
   .hamburger-menu::before,
@@ -96,7 +98,7 @@ header h1{
     text-decoration:none;
     width:fit-content;
     border-radius:2px;
-    color:white;
+    color:rgb( 247, 231, 206);;
     font-size:1em;
   }
   /* Background of the menu's when hover*/
@@ -104,44 +106,13 @@ header h1{
     display:block;
     padding:0.5em;
     text-decoration:none;
-    background-color:rgb(232, 233, 208);
+    background-color:rgb( 247, 231, 206);
     font-size:1em;
   }
   /* Background of the menu's when hover*/
   
 
-@media screen and (max-width: 500px){
-    #desk{ content-visibility: hidden;}   
-}
-.sidebar nav ul li{
-    margin-bottom: 20px;
-    font-weight: bolder;
-}
-.sidebar nav ul li a{
-    margin-bottom: 20px;
-    font-size: large;
-    text-decoration: none;
-    color: rgb(17, 17, 17);
-}
-.sidebar nav ul li{
-    list-style-type: disc;
-    list-style-type: none;
-    
-}
 
-.introduction{
-    color:rgb(0, 119, 255);
-    font-size:300%;
-    width:100vw;
-    height:60vh;
-    font-family: 'Playfair Display', serif;
-    transition: transform 0.3s ease-in;
-    
-}
-header{
-    color:rgb(255, 255, 255);
-    background-color:rgb(115, 75, 94) ;
-}
 @keyframes bounce {
     0%,
     20%,
@@ -165,10 +136,10 @@ header{
     }
     @keyframes rotation{
         from{
-            transform:rotate(0deg)
+            transform:rotateY(0deg)
         }
         to{
-            transform:rotate(180deg);
+            transform:rotateY(180deg);
             
 
         }
@@ -176,6 +147,8 @@ header{
  footer{
     
     color:white;
+    width:100vw;
+    height:fit-content;
     background-color: rgb(115, 75, 94) ;
     position:relative;
     padding:5px;
@@ -185,11 +158,14 @@ header{
     
     color:white;
     margin-right:7vw;
-    font-size: 3em;
+    
     transition: transform 0.3s ease-in;
     padding:2px;
     margin-left:9vw;
    
+ }
+ footer a{
+    font-size: large;
  }
  footer i:hover ,footer i:focus footer:active{
     animation:pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1 normal;
@@ -197,11 +173,12 @@ header{
  footer p{
     color:white;
     text-align: center;
+    font-size:large
     
  
 }
 
-.introduction:hover{
+.firststate__introduction{
     animation-name: bounce;
     animation-duration: 0.3s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -210,29 +187,39 @@ header{
    animation-direction: normal;
 }
 #firststate{
+    
+    width:80%;
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     border-radius:30px;
     padding:12px 15px 0 5px;
-    height:50vh;
     margin-top:30px;
     border:0.1em solid black ;
     box-shadow: 5px 3px grey;
+    height:27%;
+    margin-right: auto;
+    margin-left: auto;
 }
-#firststate img{
-    width:45vw;
+.firststate__img{
+    width:45%;
     border: 0.1em solid black;
     border-radius: 50%; 
     align-self: center;
 }
 .footerwith{
-    font-size: 20px;
+    font-size: 12%;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
+    margin-top: 65%;
 }
+.firststate__introduction{
+    font-size: 33px;
+}
+
+
 
 /*About me Style */ 
 
@@ -276,20 +263,29 @@ h3, div h4{
     
 }
 
-#img1,#img2, #img3, #img4, #img5, #img6, #img7,.shorts img{
-    width:60%;
-    height:90%;
+#img1,#img2, #img3, #img4, #img5, #img6, #img7{
+    width:40vw;
+    height:50%;
     float:right;
     margin-top:2px ;
-    
-    
+}
+.shorts img{
+    height:50%; 
+    float:right;
+    margin-top:2px ;
 }
 #img8{
-    float:left;
+    width:80%;
+    height:100%;
+    margin-right: 40px;
+    margin-left: auto;
 }
 .top p{
     margin-top:0;
     padding:1em;   
+}
+.rower div{
+    margin:20px;
 }
 h3, div h4{
     text-align:center;
@@ -321,6 +317,10 @@ h3, div h4{
   #bookimg{
     display:none;
   }
+  table{
+    margin-right:auto;
+    margin-left: auto;
+}
   th, td {
     padding-left: 8px;
   }
@@ -347,7 +347,6 @@ td img{
     height:30vh;
 
 }
-/*ffff*/
 h1{
     font-size: 2em;
 }
@@ -413,6 +412,7 @@ main{
     flex-direction: column;
 }
 span .fa-phone::before {
+    
     font-size:10em;
     border:2px solid black;
     border-radius: 50%;
@@ -435,7 +435,8 @@ span .fa-phone::before {
     display:flex;
     flex-direction: column;
     gap:10px;
-    margin-left:12px
+    margin-left:12px;
+    overflow-y: scroll;
 }
 #contactp{
     margin-top:0;
@@ -446,7 +447,915 @@ span .fa-phone::before {
 span{
     font-size:1em;
 }
-.footerwith{
-    margin-top:170px;
+
+/* media queries*/
+@media (min-width: 320px) and (max-width: 480px) {
+    #desk{ content-visibility: hidden;} 
+
+    .sidebar nav ul li{
+        margin-bottom: 10px;
+        font-weight: bolder;
+    }
+    .sidebar nav ul li a{
+        margin-bottom: 20px;
+        font-size: large;
+        text-decoration: none;
+        color: rgb(17, 17, 17);
+    }
+    .sidebar nav ul li{
+        
+        list-style-type: none;
+        
+    }
+    header{
+        color:rgb(255, 255, 255);
+        background-color:rgb(115, 75, 94) ;
+        width:100%;
+    }
+    #firststate{
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        height:85%;
+        margin-right:auto;
+        margin-left: auto;
+        width:95%;
+        margin-top:20%;
+        box-shadow: 15px 15px grey;
+        margin-bottom:50px
+    }
+    #firstate img{
+        width:50%;
+    }
+    
+    .firststate__introduction{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20%;
+    }
+    
+    .footerwith{
+        font-size: 20px;
+        width:100vw;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    footer i{
+      
+        justify-content: space-between;
+    }
+    section{
+        display:flex;
+        flex-direction: row;
+        gap:1em;
+        justify-content: flex-start;
+        align-items:flex-start;
+        flex-wrap: wrap;
+        
+    }
+    #img1,#img2, #img3, #img4{
+            width:30%;
+            height:39%;
+            float:right;
+            margin-top:2px;
+            padding:2%;
+            margin-right:auto;
+    }
+    #img5, #img7{
+        width:50%;
+        height:50%;
+
+    }
+    #img6{
+        width:50%;
+        height:35%
+    }
+    .shorts img{
+        height:50%;
+        width:40%;
+    }
+    article{
+        margin-top:50px;
+        margin-bottom: 15%;
+    }
+    
+    #img8{
+        float:left;
+        width:55vw;
+        height:47vh;
+        margin-left:45px;
+        margin-bottom:100px;
+        padding-bottom: 100px;
+    
+    }
+     .top{
+        width:90vw;
+        margin-left:auto;
+        margin-right:auto;
+        height:34%;
+        
+    
+    }
+    video{
+        width:75vw;
+        margin-left:50px;;
+        height:70vh;
+        
+    }
+    h2, h3, div h4{
+       margin-right: auto;
+       margin-left: auto;
+    }
+    table{
+        width:100%;
+        margin-right:auto
+    }
+    th{
+        font-size:20px;
+    }
+    tr, td{
+        width:20vw;
+        height:20vh;
+    }
+    .imagespull{
+        height:50vh;
+        width:100%;
+        
+      
+    }
+    .imagespull p{
+        text-align: center;
+        padding-left:20%
+    }
+    
+    
+    #schcompound img{
+        width:35%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 1%;
+        margin-right: 4%;
+        margin-left: 4%;
+       
+    }
+    .imagespull #magiccarpet{
+        display:flex;
+        flex-direction:column;
+       
+    }
+    .imagespull #image1{
+        width:70%;
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+    .resume{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        padding:2% 1%;
+        gap:3%;
+    
+    }
+    .card{
+        width:100%;
+        gap:2%;
+        overflow-y: scroll;
+        height:90%
+    
+    }
+    .card img{
+        padding:4px;
+        width:50%;
+        height:50%;
+    }
+    .card h4 {
+        font-size:15px;
+    }
+    .info{
+        margin-top: 50%;
+    }
+    .iconphone{
+        margin-top:1%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #contactp{
+        margin-left: 2%;
+        
+    }
 }
+
+@media (min-width:481px) and (max-width: 767px)    {
+    #desk{content-visibility: hidden;}
+.sidebar nav ul li{
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.sidebar nav ul li a{
+    margin-bottom: 20px;
+    font-size: large;
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+.sidebar nav ul li{
+    list-style-type: none;
+}
+header{
+    color:rgb(255, 255, 255);
+    background-color:rgb(115, 75, 94) ;
+    width:100%;
+
+}
+.top{
+    overflow-y: scroll;
+}
+
+
+
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1023px) {
+    #desk{ content-visibility: hidden;}   
+
+.sidebar nav ul li{
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.sidebar nav ul li a{
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+.sidebar nav ul li{
+    list-style-type: none;
+}
+header{
+   
+    background-color:rgb(115, 75, 94) ;
+    font-size:30px;
+}
+.hamburger-menu{
+    margin-top:30px
+}
+main h1{
+    font-size:7em;
+}
+#firststate{
+    display:flex;
+    flex-direction:row;
+    height:60vh;
+    margin-right: auto;
+    margin-left: auto;
+    width:90%;
+    box-shadow: 15px 15px grey;
+    margin-top:14%;
+    margin-bottom:2%;
+    align-items:center;
+}
+.firststate__img{
+    order:1;
+    width:40%;
+   
+}
+.firststate__introduction{
+    text-align:left;
+    order:0;
+    padding-left:5px
+}
+footer{
+    height:80px;
+}
+.footerwith{
+    font-size: 25px;
+    width:100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+footer i{
+    font-size: 13px;
+    margin-left:5vw;
+    justify-content: space-around;
+}
+
+
+section{
+    display:flex;
+    flex-direction: column;
+    gap:2em;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-wrap: wrap;
+   
+}
+#img1,#img2, #img3, #img4{
+       
+        width:30%;
+       float:right;
+       height:25vh;
+        margin-top:2px ;
+        margin-left: auto;
+        padding-right:1%;
+        margin-right:auto;
+        
+        
+}
+#img8{
+    float:left;
+    width:90%;
+    height:100%;
+    margin-left:45px;
+    margin-bottom:100px;
+    padding-bottom: 100px;
+
+}
+#img5,.shorts img , #img7{
+    height:20vh;
+    width:50%;
+    margin-bottom:2px
+}
+#img6{
+    width:50%;
+    height:25vh;
+    padding:1%
+}
+#books p, #movies p, #destinations p {
+    font-size:33px;
+}
+#books h4, #movies h4, #destinations h3{
+    font-size:40px;
+}
+h2{
+    font-family: 'Smooch', cursive;
+    font-size: 5em;
+}
+
+
+ .top{
+    width:90vw;
+    margin-left:auto;
+    margin-right:auto;
+    height: 32vh;
+    overflow-y: scroll;
+}
+video{
+    width:80vw;
+    margin-left:50px;
+    height:60vh;
+    margin-top:0
+    
+}
+h2, h3, div h4{
+   margin-right: auto;
+   margin-left: auto;
+}
+table{
+    width:90vw;
+    margin-right:auto;
+    margin-left:auto;
+}
+th{
+    font-size:4em;
+}
+tr, td{
+    width:20vw;
+    height:20vh;
+    font-size:1.5em
+}
+.imagespull{
+    height:fit-content;
+    width:80vw;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.imagespull p{
+    text-align: center;
+    padding-left:20%;
+    font-size:2em;
+}
+#schcompound img{
+    width:35%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    margin-right: 4%;
+    margin-left: 4%;
+    
+}
+#schcompound{
+    margin-bottom:20%
+}
+.imagespull #magiccarpet{
+    display:flex;
+    flex-direction:column;
+}
+.imagespull #image1{
+    width:70%;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.resume{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding:2% 1%;
+    gap:3%;
+}
+.card{
+    width:45vw;
+    gap:2%;
+    overflow-y: scroll;
+    height:70vh;
+    opacity: 0.9;
+}
+.card li{
+    font-weight: 900;
+    font-size: 2em;
+}
+.card img{
+    padding:4px;
+    width:50%;
+    height:50%;
+}
+.card h4 {
+    font-size:2em;
+}
+.side{
+    margin-top: 20%;
+    align-self: center;
+}
+.iconphone{
+    margin-top:2%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#contactp{
+    margin-left: 2%;
+}
+
+}
+
+@media (min-width:768px) and (max-width :1024px) and (orientation:landscape) {
+    #desk{ content-visibility: hidden;} 
+
+.sidebar nav ul li{
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.sidebar nav ul li a{
+    margin-bottom: 20px;
+    font-size: large;
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+.sidebar nav ul li{
+    list-style-type: none;
+    
+}
+.hamburger-menu{
+    margin-top:20px;
+}
+header{
+    width:100%;
+    color:rgb(255, 255, 255);
+    background-color:rgb(115, 75, 94) ;
+}
+#firststate{
+    display:flex;
+    flex-direction:column;
+    height:65%;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    width:90%;
+    box-shadow: 15px 15px grey;
+    margin-bottom:50px
+}
+#firstate img{
+    width:20%;
+    order:0
+}
+.firststate__introduction{
+    text-align: center;
+    order:1
+}
+footer{
+    height:80px;
+}
+.footerwith{
+    font-size: 25px;
+    width:100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+footer i{
+    font-size: 13px;
+    margin-left:14vw;
+    justify-content: space-around;
+}
+section{
+    display:flex;
+    flex-direction: column;
+    gap:2em;
+    justify-content: flex-start;
+    align-items:center;
+    flex-wrap: nowrap;
+    height:90%
+}
+#img1,#img2, #img3, #img4, #img5,  #img7{
+        width:50%;
+        height:30%;
+        float:right;
+        margin-top:2px;
+        padding:1%
+}
+.shorts img{
+    height:50%;
+    width:50%;
+    padding-bottom: 10%;
+}
+#img6{
+    width:30%;
+    height:45%;
+}
+#img8{
+    float:left;
+    width:90%;
+    height:100%;
+    margin-left:45px;
+    margin-bottom:100px;
+    padding-bottom: 100px;
+
+}
+
+ .top{
+    width:90%;
+   
+    height:20%;
+    padding-bottom: 13%;
+    margin-bottom: 2%;
+    margin-top:2%
+
+}
+video{
+    width:75%;
+    margin-left:50px;;
+    height:70%;
+    
+}
+h2, h3, div h4{
+   margin-right: auto;
+   margin-left: auto;
+}
+table{
+    margin-right:auto;
+    margin-left:auto;
+}
+th{
+    font-size:30px;
+}
+tr, td{
+    width:20%;
+    height:20%;
+}
+.imagespull{
+    height:70%;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.imagespull p{
+    text-align: center;
+    padding-left:20%
+}
+
+
+#schcompound img{
+    width:35%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    margin-right: 4%;
+    margin-left: 4%;
+   
+}
+.imagespull #magiccarpet{
+    display:flex;
+    flex-direction:column;
+   
+}
+.imagespull #image1{
+    width:70%;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.resume{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding:2% 1%;
+    gap:3%;
+
+}
+.card{
+    width:45vw;
+    gap:2%;
+    overflow-y: scroll;
+    height:90vh
+
+}
+.card img{
+    padding:4px;
+    width:50%;
+    height:50%;
+}
+.card h4 {
+    font-size:15px;
+}
+.iconphone{
+    margin-top:1%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#contactp{
+    margin-left: 2%;
+}
+}
+@media  (min-device-width: 1024px) {
+    body{
+        background-image:url("https://images.unsplash.com/photo-1619252584172-a83a949b6efd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fHw%3D");
+}
+    .menu-bar-container,.hamburger-menu,.head-nav{
+        content-visibility:hidden;
+    }
+
+  #desk ul{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        list-style-type: none;
+        color:white
+    }
+    #desk ul li a{
+        color:black;
+    }
+    #desk ul li a:hover,  #desk ul li a:focus,  #desk ul li a:active{
+        background-color: rgb( 247, 231, 206);
+        animation:pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1 normal;
+    }
+    header{
+   
+        background-color:rgb(115, 75, 94);
+        font-size:20px;
+    }
+    main h1{
+        font-size:7em;
+    }
+    #firststate{
+        display:flex;
+        flex-direction:row;
+        height:50%;
+        margin-right: auto;
+        margin-left: auto;
+        width:70%;
+        box-shadow: 15px 15px grey;
+        margin-top:12%;        
+        margin-bottom:2%;
+        align-items:center;
+    }
+    .firststate__img{
+        order:1;
+        width:100%;
+        height:50%;
+
+    }
+    .footerwith{
+        margin-bottom: auto;
+      position:relative; 
+    }
+    footer{
+        height:80px;
+        margin-top:0;
+    }
+    .footerwith{
+        font-size: 25px;
+        width:100%;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+    footer i{
+        font-size: 13px;
+        margin-left:14vw;
+        justify-content: space-around;
+    }
+    .firststate__introduction{
+        text-align:left;
+        order:0;
+        padding-left:5px
+    }
+   section {
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        justify-content:space-between;
+        align-content: flex-start;
+        height:fit-content;
+        flex-wrap: nowrap;
+        
+        
+    }
+    .rower{
+        display:flex;
+        flex-direction:row;
+        width:150vw;
+        gap:2%;
+        justify-content: space-between;
+        align-items:stretch;
+        height:max-content;
+    }
+    .rower {
+        width: 90vw;
+        margin:5%;
+       
+    }
+    #books div{
+        height:60vh
+    }
+    #movies div{
+        height: 105vh;
+        overflow-y: scroll;
+        
+    }
+    #destinations div{
+        height:75vh;
+       
+    }
+    
+    #img1,#img2, #img3, #img4{
+            width: 25%;
+            float:right;
+           padding-right:30px;
+           padding-top: 5px;
+           height:22vh;
+    }
+    .firststate__introduction{
+        text-align:left;
+        order:0;
+        padding-left:5px
+    }
+    #img8{
+        float:left;
+        width:55vw;
+        height:47vh;
+        margin-left:45px;
+        margin-bottom:100px;
+        padding-bottom: 100px;
+    
+    }
+    #img5,.shorts img , #img7{
+        height:45%;
+        width:50%;
+        padding:7%;
+    }
+    #img6{
+        width:50%;
+        height:25vh;
+        padding:1%
+    }
+    #books p, #movies p, #destinations p {
+        font-size:33px;
+        margin-top: 0%;
+    }
+    #books h4, #movies h4, #destinations h3{
+        font-size:40px;
+    }
+    h2{
+        font-family: 'Smooch', cursive;
+        font-size: 5em;
+    }
+    
+     .top{
+        width:90vw;
+        margin-left:auto;
+        margin-right:auto;
+        height: fit-content;
+    }
+    video{
+        width:80vw;
+        margin-left:50px;
+        height:60vh;
+        margin-top:0
+        
+    }
+    h2, h3, div h4{
+       margin-right: auto;
+       margin-left: auto;
+    }
+    table{
+        width:90vw;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    th{
+        font-size:4em;
+    }
+    tr, td{
+        width:20vw;
+        height:20vh;
+        font-size:1.5em
+    }
+    .imagespull{
+        height:fit-content;
+        width:80vw;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+    .imagespull p{
+        text-align: center;
+        padding-left:20%;
+        font-size:2em;
+    }
+    #schcompound img{
+        width:35%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 1%;
+        margin-right: 4%;
+        margin-left: 4%;
+        
+    }
+    #schcompound{
+        margin-bottom:20%
+    }
+    .imagespull #magiccarpet{
+        display:flex;
+        flex-direction:column;
+    }
+    .imagespull #image1{
+        width:70%;
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+    .resume{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        padding:2% 1%;
+        gap:2%;
+        justify-content: space-around;
+    }
+    .card{
+        width:27vw;
+        gap:2%;
+        overflow-y: scroll;
+        height:100vh;
+        opacity: 0.9;
+    }
+    .card:hover{
+        animation:rotation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1 normal;
+    }
+    .card li{
+        font-weight: 900;
+        font-size: 2em;
+    }
+    .card img{
+        padding:4px;
+        width:50%;
+        height:50%;
+    }
+    .card h4 {
+        font-size:2em;
+    }
+    .side{
+        margin-top: 2%;
+        align-self: center;
+    }
+    .iconphone{
+        margin-top:2%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #contactp{
+        margin-left: 2%;
+    }
+    
+}
+
 
