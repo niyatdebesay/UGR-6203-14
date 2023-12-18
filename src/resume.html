@@ -5,71 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
 </head>
 <body>
     <header>
-       <h1>About Me</h1>
+       
+       <nav class="navbar has-background-black" role="navigation" aria-label="main navigation" >
+        <div class = "navbar-brand">
+            <h1 class = "is-size-2 has-text-white ">Resume</h1>
+            <a class="navbar-burger  has-text-white"  id = "burger">
+            <span ></span>
+            <span ></span>
+            <span ></span>
+          </a>
+        </div>
+        <div class="navbar-menu" id = "nav-links">
+            
+            <div class = "navbar-end">
+          <a class="navbar-item" href="homepage.html"> Home</a>
+            <a class="navbar-item" href="about.html">About</a>
+            <a class="navbar-item" href="Education.html"> Education</a>
+            <a class="navbar-item" href="resume.html">Resume</a>
+            <a class="navbar-item" href="contactus.html">Contact</a>
+          </div> 
+          </div>         
+      </nav>
         </header>
 
     <main>
-        <nav>
-            <i class = "fa fa-list fa lg"> Menu</i>
-            <ul>
-                <li><a href = "homepage.html"><i class = "fa fa-home "></i>Home </a></li>
+       
+       
+        <div class = "columns mt-5 is-8 is-variable is-multiline">
+        <div class = "column is-6-tablet is-4-desktop">
+        <div class = "card mx-6 my-6  ">
+            <div class ="card-image">
                 
-           <li><a href = "about.html"><i class = "fa fa-id-card ">About Me</i></a></li>
-            <li><a href = "Education.html"><i class = "fa fa-book  "></i>Education</a></li>
-            <li><a href = "resume.html"><i class = "fa fa-file  "></i>Resume</a></li>
-            <li><a href = "contactus.html"><i class = "fa fa-phone "></i>Contact Us</a></li>
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSW7lJVC9tGMQWSM-_HRMbzjMml3yMRaVF5DNxuOTUMZdCnWGrjoEdKuX-hWBTOSHcGE&usqp=CAU" class = "image is-1x1">
             
-        </ul>
-        </nav>
-        <div>
-        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSW7lJVC9tGMQWSM-_HRMbzjMml3yMRaVF5DNxuOTUMZdCnWGrjoEdKuX-hWBTOSHcGE&usqp=CAU" width = "500px">
-        <ul>
-            <li>Completed Highschool fom LCCS</li>
-            <li></li>
-            <li> </li>
-        </ul>
-
-
-        </p>
+            </div>
+            <div class = "card-content">
+                <ul>
+                    <li>Completed Highschool fom LCCS</li>
+                    <li> recieved a certificate for completing data structure Course on coursera</li>
+                    <li>recieved a certificate for completing javascript course from CFG team </li>
+                </ul>
+            </div>
+            </div>
     </div>
-    <div>
-        <img src = "https://img.freepik.com/premium-vector/skills-concept-education-training-improvement-people-get-knowledge-build-career-illustration_277904-4760.jpg " width = "500px">
-        <h4> Hard Skills</h4>
+    <div class = " column is-6-tablet is-4-desktop">
+    <div class = "card mx-6 my-6  " >
+        <div>
+            <figure class = "card-image is-1x1">
+        <img src = "https://img.freepik.com/premium-vector/skills-concept-education-training-improvement-people-get-knowledge-build-career-illustration_277904-4760.jpg " >
+        </figure>
+    </div>
+    
+    <div class = "card-content">
+        <h4 class = "is-size-4 has-text-centered"> Hard Skills</h4>
         <ul>
             <li> Coding Ability</li>
             <li>English Proficiency</li>
             <li>Knowledge of Data stucture and algorithms</li>
         </ul>
-        <h4> Soft Skills</h4>
+        <h4 class = "is-size-4 has-text-centered"> Soft Skills</h4>
         <ul>
             <li>Teamwork Spirit</li>
             <li>Communication</li>
             <li>Work ethic</li>
         </ul>
-
-
-        </p>
     </div>
-    <div>
-        <img src = "https://runtoledo.com/wp-content/uploads/volunteer-1-400x400.png " width = "500px">
-
+</div>
+        </div>
+    
+    <div class = "column is-6-tablet is-4-desktop full-height ">
+    <div class = "card mx-6 my-6">
+        <figure class = "card-image is-1x1">
+        <img src = "https://runtoledo.com/wp-content/uploads/volunteer-1-400x400.png " >
+    </figure>
+    </div>
+    <div class = "card-content">
         <ul>
             <li>Volunteered for a year at Zewditu Orphange as a tutor</li>
-            <li></li>
+            
         </ul>
     </div>
-    </main>
-    <footer>
-       <i class = "fa fa-envelope "> </i>
-        <i class = " fa fa-facebook "> </i>
-         <i class = " fa fa-instagram "></i>
-         <i class = " fa fa-twitter "> </i>
-         <p>Copyright &copy;  2023</p>
+</div>
+</div>
 
+
+
+    </main>
+    <footer class = "footer has-background-primary pb-1 has-text-centered">
+        <div class = "has-text-centered"></div>
+       <a href = "mailto:niyatdebesay26@gmail.com"><i class = "fa fa-envelope  has-text-white px-6 mx-6-desktop"> </i></a>
+       <a href = "https://www.facebook.com/"><i class = " fa fa-facebook  has-text-white mr-6 ml-6 pr-6 pl-6-desktop"> </i></a> 
+       <a href = "https://www.instagram.com/"><i class = " fa fa-instagram    has-text-white mx-6 px-6-desktop "> </i></a>
+      <a href = "https://twitter.com/"><i class = " fa fa-twitter   has-text-white px-6 mx-6-desktop "> </i></a>
+      <p class = "has-text-centered is-size-5  has-text-white ">Copyright &copy;  2023    Niyat Debesay    </p>
+    </div>
     </footer>
+    <script >
+        const BurgerIcon = document.querySelector("#burger");
+        const navbarmenu = document.querySelector("#nav-links");
+        BurgerIcon.addEventListener("click", ()=>{
+        navbarmenu.classList.toggle("is-active")
+})
+    </script>
     
 </body>
 </html>

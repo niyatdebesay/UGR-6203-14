@@ -5,43 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Personal Portfolio-Contact Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar has-background-black" role="navigation" aria-label="main navigation" >
+            <div class = "navbar-brand">
+                <h1 class = "is-size-2 has-text-white ">Contact </h1>
+                <a  class="navbar-burger  has-text-white"  id = "burger">
+                <span ></span>
+                <span ></span>
+                <span ></span>
+              </a>
+            </div>
+            <div class="navbar-menu" id = "nav-links">
+                
+                <div class = "navbar-end">
+              <a class="navbar-item" href="homepage.html"> Home</a>
+                <a class="navbar-item" href="about.html">About</a>
+                <a class="navbar-item" href="Education.html"> Education</a>
+                <a class="navbar-item" href="resume.html">Resume</a>
+                <a class="navbar-item" href="contactus.html">Contact</a>
+              </div> 
+              </div>         
+          </nav>
+    </header>
     <main>
-    <nav>
-        <i class = "fa fa-list fa lg"> Menu</i>
-        <ul>
-            <li><a href = "homepage.html"><i class = "fa fa-home "></i>Home </a></li>
-            
-       <li><a href = "about.html"><i class = "fa fa-id-card ">About Me</i></a></li>
-        <li><a href = "Education.html"><i class = "fa fa-book  "></i>Education</a></li>
-        <li><a href = "resume.html"><i class = "fa fa-file  "></i>Resume</a></li>
-        <li><a href = "contactus.html"><i class = "fa fa-phone "></i>Contact Me</a></li>
-    </ul>
-    </nav>
+   
     
-        <div>
-    <span ><i class=" fa fa-phone" ></i> Contact Me</span>
+        <div class = "section">
+            <div class = "columns is-desktop is-gapless">
+            <span class="icon is-large column ">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-phone fa-lg fa-stack-1x "></i>
+                </span>
+              </span>
+              <div class = "column">
+    <span class = "title" >Contact Me</span>
     <p > Want to work with me</p>
     <p>Then contact me through the following accounts</p>
 </div>
+</div>
+</div>
 
-    <div> 
+    <div class = "section"> 
         <i class = "fa fa-linkedin"> LinkedIn  nyuitzel</i>
         <p > <i class = "fa fa-envelope "> Email:</i><a href = "mailto:niyatdebesay26@gmail.com">niyatdebesay26@gmail.com</a> </p>
         <p > <i class = " fa fa-facebook "> Facebook:</i><a href = "mailto:niyatdebesay26@gmail.com">niyatdebesay26@gmail.com</a> </p>
         <p > <i class = " fa fa-instagram "> Instagram :</i><a href = "mailto:niyatdebesay26@gmail.com">niyatdebesay26@gmail.com</a> </p>
         <p > <i class = " fa fa-twitter "> Twitter :</i><a href = "mailto:niyatdebesay26@gmail.com">niyatdebesay26@gmail.com</a> </p>
     </div>
-    <div>
+    <div class ="section">
         <address>Addis Ababa, Ethiopia
             lideta Street no 103 </address>
         <p>tel: <a href="tel:+251937515017">+251-93-751-5017</a></p>
 
     </div>
+    
 </main>
-    <footer >
+    <footer class = "footer has-text-centered ">
         <p>Copyright &copy;  2023</p>
     </footer>
+    <script >
+        const BurgerIcon = document.querySelector("#burger");
+        const navbarmenu = document.querySelector("#nav-links");
+        BurgerIcon.addEventListener("click", ()=>{
+        navbarmenu.classList.toggle("is-active")
+})
+    </script>
 </body>
 </html>

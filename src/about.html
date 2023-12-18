@@ -5,116 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Personal Portfolio-About Me</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <nav class="navbar has-background-black" role="navigation" aria-label="main navigation" >
+            <div class = "navbar-brand">
+                <h1 class = "is-size-2 has-text-white ">About Me</h1>
+                <a class="navbar-burger  has-text-white"  id = "burger">
+                <span ></span>
+                <span ></span>
+                <span ></span>
+              </a>
+            </div>
+            <div class="navbar-menu" id = "nav-links">
+                
+                <div class = "navbar-end">
+              <a class="navbar-item" href="homepage.html"> Home</a>
+                <a class="navbar-item" href="about.html">About</a>
+                <a class="navbar-item" href="Education.html"> Education</a>
+                <a class="navbar-item" href="resume.html">Resume</a>
+                <a class="navbar-item" href="contactus.html">Contact</a>
+              </div> 
+              </div>         
+          </nav>
 
 
     </header>
 
     <main>
-        <nav>
-            <i class = "fa fa-list fa lg"> Menu</i>
-            <ul>
-                <li><a href = "homepage.html"><i class = "fa fa-home "></i>Home </a></li>
-                
-           <li><a href = "about.html"><i class = "fa fa-id-card ">About Me</i></a></li>
-            <li><a href = "Education.html"><i class = "fa fa-book  "></i>Education</a></li>
-            <li><a href = "resume.html"><i class = "fa fa-file  "></i>Resume</a></li>
-            <li><a href = "contactus.html"><i class = "fa fa-phone "></i>Contact Me</a></li>
-        </ul>
-        </nav>
-        <h1>Hobbies</h1>
-        <section>
-        <h2>Reading Books</h2>
-        <div>
-        <video controls autoplay>
-           <source src  = "image/istockphoto-1553931355-640_adpp_is.mp4"  >
-        </video>
-        </div>
         
-        <h2>Book List</h2>
-        <div>
-        <img src = "image/agathacr.jpg" alt = "book cover" >
-        <h4>The murder of Roger Ackroyd</h4><p>The famous detective novel "The Murder of Roger Ackroyd" by Agatha Christie was published in 1926. It follows Christie's famous investigator Hercule Poirot as he investigates the murder of rich businessman Roger Ackroyd in a tiny English town. The novel is well recognized for its deft narrative twist, which startled readers when it was initially released and has since grown to become one of the most well-known and divisive endings in mystery fiction history. Even now, the book is still read and regarded as a masterpiece in its area.</p>
+        <h1 class = "title has-text-centered">Hobbies</h1>
+        <section>
+        <h2 class = "is-size-3 ml-4">Reading Books</h2>
+        
+        <div class = " content">
+            <div class = "columns ">
+                <div class = "column is-one-quarter-mobile "></div>
+
+                <div class="column is-one-third ">
+                    <figure class = "column is-half column is-8 is-offset-4-desktop image is-1x1">
+                    <video controls autoplay >
+                    <source src  = "image/istockphoto-1553931355-640_adpp_is.mp4"  >
+                </video>
+                </figure>
     </div>
-    <div>
-        <img src = "image/frank.jpg" alt = "book cover" >
-        <h4>Frankenstein</h4><p>English writer Mary Shelley published her novel Frankenstein, also known as The Modern Prometheus, in 1818. In the unconventional scientific experiment depicted in Frankenstein, a young scientist named Victor Frankenstein produces a sentient monster. </p>
+            <div class = "column is-three-quarter-mobile "></div>
+        </div>
+    
+        
+        <h2 class ="is-size-3 has-text-centered">Book List</h2>
+        <section class = " section ">
+            <div class="is-flex-desktop  ">
+                
+            <div class = " columns-mobile is-flex-desktop is-flex-direction-column is-7  box ">
+            <figure class="image is-128x128 is-pulled-right column ">
+            <img src = "image/agathacr.jpg" alt = "book cover" >
+            </figure>
+            <div>
+            <h4 class = "column pb-4" >The murder of Roger Ackroyd</h4><p class = "column mb-6 " >The famous detective novel "The Murder of Roger Ackroyd" by Agatha Christie was published in 1926. It follows Christie's famous investigator Hercule Poirot as he investigates the murder of rich businessman Roger Ackroyd in a tiny English town. The novel is well recognized for its deft narrative twist, which startled readers when it was initially released and has since grown to become one of the most well-known and divisive endings in mystery fiction history. Even now, the book is still read and regarded as a masterpiece in its area.</p>
     </div>
-    <div>
-        <h4>The Silent Patient</h4><p> The frightening psychological thriller The Silent Patient tells the story of a lady who beats her husband and the therapist who is determined to learn more about it.</p>
+</div>
+    <div class = " columns-mobile grid-xl box ">
+        <figure class="image is-128x128 is-pulled-right column  ">
+        <img src = "image/frank.jpg" alt = "book cover"  >
+        </figure>
+        <h4 class = "column pb-4">Frankenstein</h4><p class = "column mb-6">English writer Mary Shelley published her novel Frankenstein, also known as The Modern Prometheus, in 1818. In the unconventional scientific experiment depicted in Frankenstein, a young scientist named Victor Frankenstein produces a sentient monster. </p>
     </div>
-    <div>
-        <img src = "image/tellme.jpg" alt = "book cover" >
-        <h4>Tell Me Your Dreams</h4><p>The protagonists of this book are Ashley Patterson, a stunning, intelligent, and hardworking techie who works for a prestigious silicon valley company; Toni Prescott, a party animal who enjoys singing and dancing; and Alette Peters, an art enthusiast with a natural ability to paint.</p>
+</div>
+<div class="is-flex-desktop">
+    <div class = "columns-mobile grid-xl box">
+        <figure class="image is-128by128 is-pulled-right column">
+        <img src = "image/Thesilent_.jpg" alt = "book cover" class = "image is-128x128"></figure>
+        <h4 class ="column pb-4">The Silent Patient</h4><p class = "mb-6"> The frightening psychological thriller The Silent Patient tells the story of a lady who beats her husband and the therapist who is determined to learn more about it.</p>
     </div>
+    <div class = "columns-mobile grid-xl box">
+        <figure class="image is-128x128 is-pulled-right column">
+        <img src = "image/tellme.jpg" alt = "book cover" ></figure>
+        <h4 class = "column pb-4">Tell Me Your Dreams</h4><p class = " mb-6">The protagonists of this book are Ashley Patterson, a stunning, intelligent, and hardworking techie who works for a prestigious silicon valley company; Toni Prescott, a party animal who enjoys singing and dancing; and Alette Peters, an art enthusiast with a natural ability to paint.</p>
+    </div>
+</div>
+    
  </section>
     <section>
-     <h2>Watching Movies </h2>
+        <div class = "section">
+     <h2 >Watching Movies </h2>
      <video controls autoplay>
-        <source src = "image/moviesw.mp4">
+        <source src = "image/moviesw.mp4"> 
     </video>
-    <h2> Movie list</h2>
-    <div>
-        
-        <img src = "image/friends.jpg" alt = "movie poster" >
-        <h4>Friends</h4>
-        <p>Friends is a 90s comedy television series set in Manhattan that follows six friends as they go through nearly every stage of life together, including falling in love, getting married, getting divorced, having kids, fighting, changing jobs, losing jobs, and all kinds of drama.</p>
+</div>
+    <h2 class = "has-text-centered"> Movie list</h2>
+    <div class="is-flex-desktop  ">
+    <div class = " columns-mobile box">
+        <figure class="image is-128x128 is-pulled-right column is-vcentered">
+        <img src = "image/friends.jpg" alt = "movie poster" ></figure>
+        <h4 class = "column">Friends</h4>
+        <p class = "column">Friends is a 90s comedy television series set in Manhattan that follows six friends as they go through nearly every stage of life together, including falling in love, getting married, getting divorced, having kids, fighting, changing jobs, losing jobs, and all kinds of drama.</p>
  </div>
- <div>
+ <div class = "columns-mobile box ">
+    <figure class="image is-128x128 is-pulled-right column is-vcentered">
     <img src = "image/tbbt.jpg" alt = "movie poster" >
-    <h4>The Big Bang Theory</h4>
-    <p>Two male Caltech scientists who live together in a Pasadena, California apartment are the focus of the episode. Both of them are unmarried and in their twenties.The program then continues to depict their ongoing battle and search for a partner. </p>
+    </figure>
+    <h4 class = " column ">The Big Bang Theory</h4>
+    <p class = "column pb-6">Two male Caltech scientists who live together in a Pasadena, California apartment are the focus of the episode. Both of them are unmarried and in their twenties.The program then continues to depict their ongoing battle and search for a partner. </p>
    
  </div>
-
- <div>
+</div>
+<div class="is-flex-desktop  ">
+ <div class = "columns-mobile box">
+    <figure class = "image is-128x128 is-pulled-right column ">
     <img src = "image/bridgerton.jpg" alt = "movie poster">
-    <h4>Bridgerton</h4>
-    <p>The eight close-knit siblings of the wealthy and influential Bridgerton family—Anthony, Benedict, Colin, Daphne, Eloise, Francesca, Gregory, and Hyacinth—navigate London high society in quest of love against the backdrop of the Regency era.</p>
+ </figure>
+    <h4 class = "column">Bridgerton</h4>
+    <p class = "column mb-6">The eight close-knit siblings of the wealthy and influential Bridgerton family—Anthony, Benedict, Colin, Daphne, Eloise, Francesca, Gregory, and Hyacinth—navigate London high society in quest of love against the backdrop of the Regency era.</p>
    
  </div>
+</div>
 </section>
 <section>
-        <h2>Writing poems</h2>
+        <h2 class ="title  has-text-centered">Writing poems</h2>
     <div>
+        <figure class = "image is-1x1">
         <img src = "image/writingjpg.jpg"  alt = "writing image" >
+    </figure>
     </div>
         <article>
              <h2>The is no greater agony than bearing an untold story inside you. Maya Angelou </h2>
         </article>
     </section>
       <section>
-        <h2> Places to Visit</h2>
-
-        <div>
-            
+        <h2 class = "title has-text-centered"> Places to Visit</h2>
+        <div class="is-flex-desktop  ">
+        <div class = "columns-mobile box">
+            <figure class ="image is-128x128 is-pulled-right column ">
             <img src = "image/santorini.webp "  alt = "santorini" >
-            <h3>Greece</h3>
-            <p>Santorini, known since ancient times as Thira, is one of the most famous islands in the world. </p>
+        </figure>
+            <h3 class = "column">Greece</h3>
+            <p class = "column mb-6">Santorini, known since ancient times as Thira, is one of the most famous islands in the world. </p>
         </div>
-        <div>
-            
+        
+        
+        <div class = "columns-mobile box ">
+            <figure class = "image is-128x128 is-pulled-right column">
             <img src = "image/venice.webp"  alt ="venice" >
-            
+        </figure>
             <h3>Venice</h3>
             <p>Venice is known for the gondola rides, the bridges like the Rialto Bridge and the Bridge of Sighs, the canals, the St. Mark's Square and Basilica</p>
         </div>
-
-        <div>
-            
-            <img src = "image/paragliding.jpg" alt = "interlaken">
-            <h3>Switzerland</h3>
-            <p>Interlaken is a hot tourist spot during summer</p>
+    </div>
+    <div class="is-flex-desktop  ">
+        <div class = "columns-mobile box">
+            <figure class = "image is-128x128 is-pulled-right column">
+            <img src = "image/paragliding.jpg" alt = "interlaken" >
+            </figure>
+            <h3 class = "column">Switzerland</h3>
+            <p class = "column mb-6">Interlaken is a hot tourist spot during summer</p>
         </div>
-        <div>
-            
-            <img src = "image/australia.jpg" alt = "australia">
-            <h3>Australia</h3>
-            <p>The Sydney Opera House, one of the century's greatest architectural achievements</p>
+        <div class = "columns-mobile box mb-6">
+            <figure class = "image is-128x128 is-pulled-right column">
+            <img src = "image/australia.jpg" alt = "australia" class = "image is-5by3">
+        </figure> 
+            <h3 class = "column">Australia</h3>
+            <p class = "column mb-3">The Sydney Opera House, one of the century's greatest architectural achievements</p>
         </div>
+    </div>
         
         
             
@@ -122,14 +176,21 @@
    
 </section>  
     </main>
-    <footer>
-        <a href = "mailto:niyatdebesay26@gmail.com"><i class = "fa fa-envelope "> </i></a>
-        <a href = "https://www.facebook.com/"><i class = " fa fa-facebook "> </i></a> 
-        <a href = "https://www.instagram.com/"><i class = " fa fa-instagram "> </i></a>
-       <a href = "https://twitter.com/"><i class = " fa fa-twitter "> </i></a>
-         <p>Copyright &copy;  2023</p>
-
+    <footer class = "footer has-background-black pb-1 has-text-centered">
+        <div class = "has-text-centered"></div>
+       <a href = "mailto:niyatdebesay26@gmail.com"><i class = "fa fa-envelope  has-text-white px-6 mx-6-desktop"> </i></a>
+       <a href = "https://www.facebook.com/"><i class = " fa fa-facebook  has-text-white mr-6 ml-6 pr-6 pl-6-desktop"> </i></a> 
+       <a href = "https://www.instagram.com/"><i class = " fa fa-instagram    has-text-white mx-6 px-6-desktop "> </i></a>
+      <a href = "https://twitter.com/"><i class = " fa fa-twitter   has-text-white px-6 mx-6-desktop "> </i></a>
+      <p class = "has-text-centered is-size-5  has-text-white ">Copyright &copy;  2023    Niyat Debesay    </p>
+    </div>
     </footer>
-    
+    <script >
+        const BurgerIcon = document.querySelector("#burger");
+        const navbarmenu = document.querySelector("#nav-links");
+        BurgerIcon.addEventListener("click", ()=>{
+        navbarmenu.classList.toggle("is-active")
+})
+    </script>
 </body>
 </html>
