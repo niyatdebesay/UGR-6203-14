@@ -5,71 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/output.css">
+</head>
 </head>
 <body>
     <header>
-       <h1>About Me</h1>
+        <nav>
+       
+            <div class="  flex justify-between  items-center bg-fuchsia-950 w-full" >
+                <h1 class = "text-5xl text-white ">Resume</h1>
+                <div class = "px-4 cursor-pointer lg:hidden" id = "burger">
+                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
+                </div> 
+           </div>
+            <div class = " flex gap-y-4 flex-col  md:flex-col space-x-5 md:space-x-9  xs:hidden sm:hidden md:hidden  lg:block md:justify-end md:mb-2 bg-fuchsia-950 text-white w-full"id = "menu">
+                <ul>
+                <li class ="hover:bg-yellow-100 hover:text-slate-900 flex gap-x-2">
+                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                      </svg>
+                    <a  href="homepage.html" >Home</a></li>
+                <li class ="hover:bg-yellow-100 hover:text-slate-900  flex gap-x-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+                      </svg>
+                      <a href="about.html" >About</a></li>
+                <li class ="hover:bg-yellow-100 hover:text-slate-900 flex gap-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                      </svg>
+                      <a  href="Education.html" > Education</a></li>
+                <li class ="hover:bg-yellow-100 hover:text-slate-900 flex gap-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                      </svg>
+                      
+                    <a href="resume.html" >Resume</a></li>
+                <li class ="hover:bg-yellow-100 hover:text-slate-900  flex gap-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                      </svg>
+                      
+                    <a href="contactus.html" >Contact</a></li>
+            </ul>
+            </div> 
+              </div> 
         </header>
 
-    <main>
-        <nav>
-            <i class = "fa fa-list fa lg"> Menu</i>
-            <ul>
-                <li><a href = "homepage.html"><i class = "fa fa-home "></i>Home </a></li>
+    <main class = "flex flex-col lg:flex-row gap-x-4 h-5/6 gap-y-4 ml-10 mr-10 lg:mb-80 ">
+       
+       
+        <div class = "grid  grid-cols-1 md:grid-cols-2 gap-x-4 row lg:flex-row lg:gap-x-8 mt-4">
+        
+        <div class = "border-2 outline-2 ring-1 mb-4 ">
+            <div class=" w-full md:w-1/2 p-4">
                 
-           <li><a href = "about.html"><i class = "fa fa-id-card ">About Me</i></a></li>
-            <li><a href = "Education.html"><i class = "fa fa-book  "></i>Education</a></li>
-            <li><a href = "resume.html"><i class = "fa fa-file  "></i>Resume</a></li>
-            <li><a href = "contactus.html"><i class = "fa fa-phone "></i>Contact Us</a></li>
+                <img src = "image/achievments.png" class = "image is-1x1">
             
-        </ul>
-        </nav>
-        <div>
-        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSW7lJVC9tGMQWSM-_HRMbzjMml3yMRaVF5DNxuOTUMZdCnWGrjoEdKuX-hWBTOSHcGE&usqp=CAU" width = "500px">
-        <ul>
-            <li>Completed Highschool fom LCCS</li>
-            <li></li>
-            <li> </li>
-        </ul>
-
-
-        </p>
+            </div>
+            <div class = "text-lg p-4 mb-10 md:mb-15 lg:mb-10">
+                <ul class = "mb-2 p-4">
+                    <li>Completed Highschool fom LCCS</li>
+                    <li> recieved a certificate for completing data structure Course on coursera</li>
+                    <li>recieved a certificate for completing javascript course from CFG team </li>
+                </ul>
+            </div>
+            </div>
+            
+    
+    <div class = "border-2 outline-2 ring-1 " >
+        <div class = "w-full md:w-1/2">
+            <figure>
+        <img src = "image/skills70.avif" >
+        </figure>
     </div>
-    <div>
-        <img src = "https://img.freepik.com/premium-vector/skills-concept-education-training-improvement-people-get-knowledge-build-career-illustration_277904-4760.jpg " width = "500px">
-        <h4> Hard Skills</h4>
-        <ul>
+    
+    <div >
+        <h4 class = "text-2xl m-2"> Hard Skills</h4>
+        <ul class = "mb-2 p-3">
             <li> Coding Ability</li>
             <li>English Proficiency</li>
             <li>Knowledge of Data stucture and algorithms</li>
         </ul>
-        <h4> Soft Skills</h4>
-        <ul>
+        <h4 class = "text-2xl m-2"> Soft Skills</h4>
+        <ul class = "mb-2 p-4">
             <li>Teamwork Spirit</li>
             <li>Communication</li>
             <li>Work ethic</li>
         </ul>
+    </div>
+</div>
+</div>
 
-
-        </p>
+       
+    <div class =  "grid row-start-2 w-full  md:w-1/2 border-2 outline-2 ring-1 md:ml-12 mb-6" >
+    <div>
+        <figure>
+        <img src = "image/vol1r.jpg" >
+    </figure>
     </div>
     <div>
-        <img src = "https://runtoledo.com/wp-content/uploads/volunteer-1-400x400.png " width = "500px">
-
-        <ul>
+        <ul class = "mb-2 p-4">
             <li>Volunteered for a year at Zewditu Orphange as a tutor</li>
-            <li></li>
+            
         </ul>
     </div>
-    </main>
-    <footer>
-       <i class = "fa fa-envelope "> </i>
-        <i class = " fa fa-facebook "> </i>
-         <i class = " fa fa-instagram "></i>
-         <i class = " fa fa-twitter "> </i>
-         <p>Copyright &copy;  2023</p>
+</div>
 
-    </footer>
+</main>
+<footer class = "border-t-2 bg-fuchsia-950 text-white ">
+    <div class = "flex  justify-between ml-6 p4">
+   <a href = "mailto:niyatdebesay26@gmail.com"><i class = "fa fa-envelope md:fa fa-envelope fa-2x "> </i></a>
+   <a href = "https://www.facebook.com/"><i class = " fa fa-facebook md:fa fa-facebook fa-2x "> </i></a> 
+   <a href = "https://www.instagram.com/"><i class = " fa fa-instagram md:fa fa-instagram fa-2x    "> </i></a>
+  <a href = "https://twitter.com/"><i class = " fa fa-twitter md:fa-fa-twitter fa-2x"> </i></a>
+  </div>
+  <div class = "flex justify-center">
+  <p class = "has-text-centered is-size-5   ">Copyright &copy;  2023    Niyat Debesay    </p>
+</div>
+</footer>
+
+<script src = "javascript/script.js">
+  
+  </script>
     
 </body>
 </html>

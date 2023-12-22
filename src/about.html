@@ -3,118 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Personal Portfolio-About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "dist/output.css">
+    
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <nav>
+       
+            <div class="flex justify-between  items-center bg-fuchsia-950  w-full"  >
+                <h1 class = "text-5xl text-white ">About</h1>
+                <div class = "px-4 cursor-pointer lg:hidden" id = "burger">
+                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
+                </div> 
+           </div>
+            <div class = " flex gap-y-4 flex-col  md:flex-col space-x-5 md:space-x-9  xs:hidden sm:hidden md:hidden  lg:block md:justify-end md:mb-2 bg-fuchsia-950 text-white w-full lg:flex-row  "id = "menu">
+                <ul>
+                <li class ="hover:bg-yellow-100 hover:text-slate-900  flex gap-x-2">
+                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                      </svg>
+                    <a  href="homepage.html" >Home</a></li>
+                <li class ="hover:bg-yellow-100 hover:text-slate-900  flex gap-x-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+                      </svg>
+                      <a href="about.html" >About</a></li>
+                <li class ="hover:bg-yellow-100 hover:text-slate-900  flex gap-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                      </svg>
+                      <a  href="Education.html" > Education</a></li>
+                <li class ="hover:bg-yellow-100  hover:text-slate-900 flex gap-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                      </svg>
+                      
+                    <a href="resume.html" >Resume</a></li>
+                <li class ="hover:bg-yellow-100 hover:text-slate-900  flex gap-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                      </svg>
+                      
+                    <a href="contactus.html" >Contact</a></li>
+            </ul>
+            </div> 
+              </div> 
 
 
     </header>
 
-    <main>
-        <nav>
-            <i class = "fa fa-list fa lg"> Menu</i>
-            <ul>
-                <li><a href = "homepage.html"><i class = "fa fa-home "></i>Home </a></li>
-                
-           <li><a href = "about.html"><i class = "fa fa-id-card ">About Me</i></a></li>
-            <li><a href = "Education.html"><i class = "fa fa-book  "></i>Education</a></li>
-            <li><a href = "resume.html"><i class = "fa fa-file  "></i>Resume</a></li>
-            <li><a href = "contactus.html"><i class = "fa fa-phone "></i>Contact Me</a></li>
-        </ul>
-        </nav>
-        <h1>Hobbies</h1>
+    <main class = "mr-6 ml-6 mt-6">
+        <h1 class = "text-5xl text-center">Hobbies</h1>
         <section>
-        <h2>Reading Books</h2>
-        <div>
-        <video controls autoplay>
-           <source src  = "image/istockphoto-1553931355-640_adpp_is.mp4"  >
-        </video>
-        </div>
-        
-        <h2>Book List</h2>
-        <div>
-        <img src = "image/agathacr.jpg" alt = "book cover" >
-        <h4>The murder of Roger Ackroyd</h4><p>The famous detective novel "The Murder of Roger Ackroyd" by Agatha Christie was published in 1926. It follows Christie's famous investigator Hercule Poirot as he investigates the murder of rich businessman Roger Ackroyd in a tiny English town. The novel is well recognized for its deft narrative twist, which startled readers when it was initially released and has since grown to become one of the most well-known and divisive endings in mystery fiction history. Even now, the book is still read and regarded as a masterpiece in its area.</p>
-    </div>
-    <div>
-        <img src = "image/frank.jpg" alt = "book cover" >
-        <h4>Frankenstein</h4><p>English writer Mary Shelley published her novel Frankenstein, also known as The Modern Prometheus, in 1818. In the unconventional scientific experiment depicted in Frankenstein, a young scientist named Victor Frankenstein produces a sentient monster. </p>
-    </div>
-    <div>
-        <h4>The Silent Patient</h4><p> The frightening psychological thriller The Silent Patient tells the story of a lady who beats her husband and the therapist who is determined to learn more about it.</p>
-    </div>
-    <div>
-        <img src = "image/tellme.jpg" alt = "book cover" >
-        <h4>Tell Me Your Dreams</h4><p>The protagonists of this book are Ashley Patterson, a stunning, intelligent, and hardworking techie who works for a prestigious silicon valley company; Toni Prescott, a party animal who enjoys singing and dancing; and Alette Peters, an art enthusiast with a natural ability to paint.</p>
-    </div>
- </section>
+            <h2 class = "text-3xl text-center p-4">Reading Books</h2>
+                <div class = 'flex justify-center items-center lg:justify-center lg:items-center'>
+                        
+                            <video controls autoplay class=" w-96" >
+                                        <source src  = "image/istockphoto-1553931355-640_adpp_is.mp4" class ="w-1/2" >
+                                    </video>
+                        
+                   </div>
+                <h2 class ="text-2xl font-serif text-fuchsia-900 text-center m-4">Book List</h2>
+                <section class = " section ">
+                    <div class="flex flex-col   gap-y-10 md:flex-col lg:flex-row gap-x-4 mb-10 ">
+                        <div class = " border-2 border-slate-200 overflow-y-scroll w-full lg:w-1/2 shadow-md ">
+                            <div  class ="mb-8">
+                                <img src = "image/agathacr.jpg" alt = "book cover"  class = "float-right h-full mt-4 mr-2 mb-8" >
+                            </div>
+                        <div>
+                        <h4 class = "pb-6 pl-2 text-2xl " >The murder of Roger Ackroyd</h4>
+                        <p class = " mb-6 pl-4" >The famous detective novel "The Murder of Roger Ackroyd" by Agatha Christie was published in 1926. It follows Christie's famous investigator Hercule Poirot as he investigates the murder of rich businessman Roger Ackroyd in a tiny English town. The novel is well recognized for its deft narrative twist, which startled readers when it was initially released and has since grown to become one of the most well-known and divisive endings in mystery fiction history. Even now, the book is still read and regarded as a masterpiece in its area.</p>
+                        </div>
+                    </div>
+                    <div class = " border-2 border-slate-200 overflow-y-scroll gap-y-10 lg:w-1/2 w-full  gap-x-4  shadow-md">
+                        <div class="mb-8  ">
+                            <img src = "image/frank.jpg" alt = "book cover" class = "float-right h-full mt-4 mr-2 mb-8"  >
+                        </div>
+                        <h4 class = "pb-6 pl-2 text-2xl  ">Frankenstein</h4>
+                        <p class = "mb-10">English writer Mary Shelley published her novel Frankenstein, also known as The Modern Prometheus, in 1818. In the unconventional scientific experiment depicted in Frankenstein, a young scientist named Victor Frankenstein produces a sentient monster. </p>
+                    </div>
+                    </div>
+                <div class= " flex flex-col w-full  gap-y-10 lg:flex-row gap-x-4 ">
+                    <div class = "border-2 border-slate-200 overflow-y-scroll gap-y-10 lg:w-1/2 w-full  shadow-md ">
+                        <div class="mb-8">
+                        <img src = "image/Thesilent_.jpg" alt = "book cover" class = "float-right w-1/4 max-w-44 min-w-44  h-1/6 mt-4 mr-2 mb-8">
+                            <h4 class ="pb-6 pl-2 text-2xl ">The Silent Patient</h4><p class = "mb-6"> The frightening psychological thriller The Silent Patient tells the story of a lady who beats her husband and the therapist who is determined to learn more about it.</p>
+                        </div>
+                    </div>
+                <div class = "border-2 border-slate-200 overflow-y-scroll lg:w-1/2 w-full shadow-md ">
+                    <div class="mb-8">
+                        <img src = "image/tellme.jpg" alt = "book cover" class = "float-right max-w-44  min-w-44 h-full mt-4 mr-2 mb-8"   >
+                    </div>
+                    <h4 class = "pb-6 pl-2 text-2xl ">Tell Me Your Dreams</h4>
+                    <p class = " mb-6">The protagonists of this book are Ashley Patterson, a stunning, intelligent, and hardworking techie who works for a prestigious silicon valley company; Toni Prescott, a party animal who enjoys singing and dancing; and Alette Peters, an art enthusiast with a natural ability to paint.</p>
+                </div>
+            </div>
     <section>
-     <h2>Watching Movies </h2>
-     <video controls autoplay>
-        <source src = "image/moviesw.mp4">
-    </video>
-    <h2> Movie list</h2>
-    <div>
-        
-        <img src = "image/friends.jpg" alt = "movie poster" >
-        <h4>Friends</h4>
-        <p>Friends is a 90s comedy television series set in Manhattan that follows six friends as they go through nearly every stage of life together, including falling in love, getting married, getting divorced, having kids, fighting, changing jobs, losing jobs, and all kinds of drama.</p>
- </div>
- <div>
-    <img src = "image/tbbt.jpg" alt = "movie poster" >
-    <h4>The Big Bang Theory</h4>
-    <p>Two male Caltech scientists who live together in a Pasadena, California apartment are the focus of the episode. Both of them are unmarried and in their twenties.The program then continues to depict their ongoing battle and search for a partner. </p>
-   
- </div>
-
- <div>
-    <img src = "image/bridgerton.jpg" alt = "movie poster">
-    <h4>Bridgerton</h4>
-    <p>The eight close-knit siblings of the wealthy and influential Bridgerton family—Anthony, Benedict, Colin, Daphne, Eloise, Francesca, Gregory, and Hyacinth—navigate London high society in quest of love against the backdrop of the Regency era.</p>
-   
- </div>
-</section>
-<section>
-        <h2>Writing poems</h2>
-    <div>
-        <img src = "image/writingjpg.jpg"  alt = "writing image" >
+        <div class = "section">
+            <h2 class = "text-3xl indent-16 p-4">Watching Movies </h2>
+            <div class = "flex justify-center items-center lg:justify-center lg:items-center ">
+                <div class = "w-96">
+            <video controls autoplay>
+                <source src = "image/moviesw.mp4" > 
+            </video>
+            </div>
+        </div>
+        </div>
+        <h2 class = "text-2xl font-serif text-fuchsia-900 text-center m-4"> Movie list</h2>
+        <div class=" flex flex-col   gap-y-10  lg:flex-row gap-x-4 mb-10">
+            <div class = "border-2 border-slate-200 overflow-y-scroll lg:w-1/2 w-full shadow-md  ">
+                <div class="mb-8">
+                    <img src = "image/friends.jpg" alt = "movie poster" class = "float-right  max-w-44 min-w-44  h-full mt-4 mr-2 mb-8">
+                    <h4 class = "pb-6 pl-2 text-2xl ">Friends</h4>
+                </div>
+                    <p class = "mb-6">Friends is a 90s comedy television series set in Manhattan that follows six friends as they go through nearly every stage of life together, including falling in love, getting married, getting divorced, having kids, fighting, changing jobs, losing jobs, and all kinds of drama.</p>
+                </div>
+        <div class = "border-2 border-slate-200 overflow-y-scroll lg:w-1/2 w-full shadow-md  ">
+            <div class="mb-8">
+                <img src = "image/tbbt.jpg" alt = "movie poster" class = "float-right h-full mt-4 mr-2 mb-8" >
+            </div>
+            <h4 class = " pb-6 pl-2 text-2xl  ">The Big Bang Theory</h4>
+            <p class = " pb-6">Two male Caltech scientists who live together in a Pasadena, California apartment are the focus of the episode. Both of them are unmarried and in their twenties.The program then continues to depict their ongoing battle and search for a partner. </p>
+        </div>
     </div>
-        <article>
-             <h2>The is no greater agony than bearing an untold story inside you. Maya Angelou </h2>
+    <div class=" flex flex-col   gap-y-10 lg:flex-row lg:w-1/2  gap-x-4">
+        <div class = "border-2 border-slate-200 overflow-y-scroll shadow-md">
+            <div class = "mb-8 ">
+                <img src = "image/bridgerton.jpg" alt = "movie poster" class = "float-right w-1/3 max-w-44  min-w-44  h-full mt-4 mr-2 mb-8">
+            </div>
+            <h4 class = "pb-6 pl-2 text-2xl ">Bridgerton</h4>
+            <p class = " mb-6">The eight close-knit siblings of the wealthy and influential Bridgerton family—Anthony, Benedict, Colin, Daphne, Eloise, Francesca, Gregory, and Hyacinth—navigate London high society in quest of love against the backdrop of the Regency era.</p>
+        </div>
+    </div>
+    </section>
+    <section class = "flex-col justify-center">
+        <h2 class ="text-3xl  p-4 text-center">Writing poems</h2>
+        <div>
+            <div>
+            <img src = "image/writingjpg.jpg"  alt = "writing image" class = "w-1/3 h-full mt-4 mr-2 mb-8 object-none object-center" >
+            </div>
+        </div>
+        <article class = "border-2 border-slate-200 shadow-md">
+             <h2 class = "text-3xl text-center">The is no greater agony than bearing an untold story inside you. Maya Angelou </h2>
         </article>
     </section>
-      <section>
-        <h2> Places to Visit</h2>
-
-        <div>
-            
-            <img src = "image/santorini.webp "  alt = "santorini" >
-            <h3>Greece</h3>
-            <p>Santorini, known since ancient times as Thira, is one of the most famous islands in the world. </p>
+    <section>
+        <h2 class = "text-2xl font-serif text-fuchsia-900 text-center m-4"> Places to Visit</h2>
+        <div class=" flex flex-col   gap-y-10 mb-4 lg:flex-row  gap-x-4 ">
+            <div class = "border-2 border-slate-200 overflow-y-scroll lg:w-1/2 shadow-md">
+                <div class ="mb-8">
+                    <img src = "image/santorini.webp "  alt = "santorini"  class = "float-right w-1/3 max-w-60 min-w-60  h-full mt-4 mr-2 mb-8">
+                </div>
+                <h3 class = "pb-6 pl-2 text-2xl ">Greece</h3>
+                <p class = "column mb-6">Santorini, known since ancient times as Thira, is one of the most famous islands in the world. </p>
+            </div>
+            <div class = "border-2 border-slate-200 overflow-y-scroll lg:w-1/2 shadow-md">
+                <div class = "mb-8">
+                    <img src = "image/venice.webp"  alt ="venice" class = "float-right w-1/3 max-w-60 min-w-60  h-full mt-4 mr-2 mb-8" >
+                </div>
+                <h3 class = "pb-6 pl-2 text-2xl ">Venice</h3>
+                <p>Venice is known for the gondola rides, the bridges like the Rialto Bridge and the Bridge of Sighs, the canals, the St. Mark's Square and Basilica</p>
+            </div>
         </div>
-        <div>
-            
-            <img src = "image/venice.webp"  alt ="venice" >
-            
-            <h3>Venice</h3>
-            <p>Venice is known for the gondola rides, the bridges like the Rialto Bridge and the Bridge of Sighs, the canals, the St. Mark's Square and Basilica</p>
+    <div class="flex flex-col  gap-y-10 mb-4 lg:flex-row gap-x-4 lg:mb-6">
+        <div class = "border-2 border-slate-200 overflow-y-scroll lg:w-1/2 shadow-md">
+            <div class = "mb-8">
+            <img src = "image/paragliding.jpg" alt = "interlaken" class = "float-right w-1/3 max-w-60 min-w-60 h-full mt-4 mr-2 mb-8">
+            </div>
+            <h3 class = "pb-6 pl-2 text-2xl ">Switzerland</h3>
+            <p class = " mb-6">Interlaken is a hot tourist spot during summer</p>
         </div>
-
-        <div>
-            
-            <img src = "image/paragliding.jpg" alt = "interlaken">
-            <h3>Switzerland</h3>
-            <p>Interlaken is a hot tourist spot during summer</p>
+        <div class = "border-2 border-slate-200 overflow-y-scroll lg:w-1/2 shadow-md">
+            <div class = "mb-8">
+            <img src = "image/australia.jpg" alt = "australia" class = "float-right w-1/3 max-w-60 min-w-60 h-full mt-4 mr-2 mb-8">
+        </div> 
+            <h3 class = "pb-6 pl-2 text-2xl ">Australia</h3>
+            <p class = "mb-3">The Sydney Opera House, one of the century's greatest architectural achievements</p>
         </div>
-        <div>
-            
-            <img src = "image/australia.jpg" alt = "australia">
-            <h3>Australia</h3>
-            <p>The Sydney Opera House, one of the century's greatest architectural achievements</p>
-        </div>
+    </div>
         
         
             
@@ -122,14 +193,18 @@
    
 </section>  
     </main>
-    <footer>
-        <a href = "mailto:niyatdebesay26@gmail.com"><i class = "fa fa-envelope "> </i></a>
-        <a href = "https://www.facebook.com/"><i class = " fa fa-facebook "> </i></a> 
-        <a href = "https://www.instagram.com/"><i class = " fa fa-instagram "> </i></a>
-       <a href = "https://twitter.com/"><i class = " fa fa-twitter "> </i></a>
-         <p>Copyright &copy;  2023</p>
-
+    <footer class = "border-t-2 bg-fuchsia-950 text-white ">
+        <div class = "flex  justify-between ml-6 p4">
+       <a href = "mailto:niyatdebesay26@gmail.com"><i class = "fa fa-envelope md:fa fa-envelope fa-2x "> </i></a>
+       <a href = "https://www.facebook.com/"><i class = " fa fa-facebook md:fa fa-facebook fa-2x "> </i></a> 
+       <a href = "https://www.instagram.com/"><i class = " fa fa-instagram md:fa fa-instagram fa-2x    "> </i></a>
+      <a href = "https://twitter.com/"><i class = " fa fa-twitter md:fa-fa-twitter fa-2x"> </i></a>
+      </div>
+      <div class = "flex justify-center">
+      <p class = "has-text-centered is-size-5   ">Copyright &copy;  2023    Niyat Debesay    </p>
+    </div>
     </footer>
-    
+    <script src="javascript/script.js">
+      </script>
 </body>
 </html>
